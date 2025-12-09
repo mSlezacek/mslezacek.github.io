@@ -1,6 +1,11 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
+title: "Marek Slezáček | Game Programmer"
+permalink: /
+description: "A portfolio showcasing technical proficiency in C# and Unity"
+header: true
 ---
+
+## Welcome to my portfolio
+
+Currently studying game development at Masaryk University. Finished bachelors in informatics at the same university.
