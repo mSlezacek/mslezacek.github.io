@@ -75,19 +75,13 @@ header {
 
 header .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-decoration: none;
-    color: var(--color-text);
+    position: sticky;
 }
 
 nav a {
-    margin-left: 20px;
+    padding: 0 80px;
     text-decoration: none;
     color: var(--color-text);
     font-weight: 500;
@@ -193,4 +187,41 @@ footer a:not(.cta-button):hover {
     font-size: 0.85rem;
     margin-top: 30px;
     opacity: 0.7;
+}
+
+.icon-button {
+    /* 1. Define Size */
+    display: inline-flex; /* Use flex to easily center the icon */
+    align-items: center;
+    justify-content: center;
+    width: 50px;       /* Width and height must be equal */
+    height: 50px;      
+    
+    /* 2. Make it Circular */
+    border-radius: 50%; /* 50% border-radius makes any square element a circle */
+    
+    /* 3. Appearance */
+    background-color: var(--color-text); /* Dark background */
+    color: var(--color-background);     /* Light icon color */
+    text-decoration: none;
+    font-size: 1.5rem; /* Size of the icon */
+    
+    /* 4. Animation */
+    transition: background-color 0.3s, color 0.3s;
+    
+    /* Remove the separator if you are using multiple icon buttons */
+    margin: 0 10px; 
+}
+
+/* Hover effect: Change colors for a nice visual feedback */
+.icon-button:hover {
+    background-color: var(--color-accent); 
+    color: var(--color-text);
+}
+
+/* If you use the button inside the contact-links-hero, adjust the original link styles to sit nicely next to it */
+.contact-links-hero a {
+    /* Keep these styles if you want the text links to look the same */
+    /* ... existing styles ... */
+    vertical-align: middle; /* Helps align the text links with the center of the button */
 }

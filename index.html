@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 <body>
+    <a id="home" name="home"></a>
 
     <header>
         <div class="container">
-            <a href="#hero" class="logo">Your Name</a>
             <nav>
+                <a href="#home">Home</a>
                 <a href="#work">Work</a>
-                <a href="#about">About</a>
+                <a href="#about">About me</a>
                 <a href="#contact">Contact</a>
             </nav>
         </div>
@@ -21,23 +24,69 @@
 
     <section id="hero" class="full-screen-section">
         <div class="container">
-            <h1>I design and build things for the web.</h1>
-            <p class="subtitle">A brief, impactful statement about what you do, like "Full-Stack Developer focused on user experience."</p>
+            <h1>Marek Slezáček</h1>
+            <p class="subtitle">A unity gameplay programmer</p>
+        <div class="contact-links-hero">
+            <a href="mailto:marekslezacek02@gmail.com" target="_blank" class="icon-button">
+                <i class="fa fa-envelope"></i> 
+            </a>
+            <a href="https://linkedin.com/in/marek-slezáček-2b42bb36a" target="_blank" class="icon-button">
+                <i class="fa fa-linkedin-square"></i> 
+            </a>
+            
+            <a href="https://github.com/mSlezacek" target="_blank" class="icon-button">
+                <i class="fab fa-github"></i>
+            </a>
+            
+            <a href="https://sll4rk.itch.io/" target="_blank" class="icon-button">
+                <i class="fab fa-itch-io"></i>
+            </a>
+        </div>
         </div>
     </section>
 
     <section id="work" class="section-padding">
         <div class="container">
-            <h2>Selected Work</h2>
+            <h2>Projects</h2>
             <div class="project-item">
-                <h3>Project Title One</h3>
-                <p>A short description of the project and your role. For example: "A complex e-commerce platform built with React and Node.js."</p>
-                <a href="link-to-project.html" class="cta-link">View Project →</a>
+                <h3>The King of BlackJack</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas hendrerit ligula quis blandit. 
+                    Mauris eget orci mi. Morbi eget tellus maximus, ultricies leo ac, vulputate urna. Sed lacus sem, aliquet 
+                    faucibus metus sed, cursus porttitor enim. Fusce molestie erat vel mi convallis pretium. Suspendisse potenti. 
+                    Proin luctus suscipit mauris.</p>
+                <a href="https://woytteew.itch.io/the-king-of-blackjack" class="cta-link">View Project →</a>
             </div>
             <div class="project-item">
-                <h3>Project Title Two</h3>
-                <p>Another short description highlighting the tech stack or achievement.</p>
-                <a href="link-to-project-two.html" class="cta-link">View Project →</a>
+                <h3>FlowerPhobia</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas hendrerit ligula quis blandit. 
+                    Mauris eget orci mi. Morbi eget tellus maximus, ultricies leo ac, vulputate urna. Sed lacus sem, aliquet 
+                    faucibus metus sed, cursus porttitor enim. Fusce molestie erat vel mi convallis pretium. Suspendisse potenti. 
+                    Proin luctus suscipit mauris.</p>
+                <a href="https://abhishta.itch.io/flowerphobia" class="cta-link">View Project →</a>
+            </div>
+            <div class="project-item">
+                <h3>Short trip</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas hendrerit ligula quis blandit. 
+                    Mauris eget orci mi. Morbi eget tellus maximus, ultricies leo ac, vulputate urna. Sed lacus sem, aliquet 
+                    faucibus metus sed, cursus porttitor enim. Fusce molestie erat vel mi convallis pretium. Suspendisse potenti. 
+                    Proin luctus suscipit mauris.</p>
+                <a href="https://sll4rk.itch.io/short-trip" class="cta-link">View Project →</a>
+            </div>
+            <div class="project-item">
+                <h3>The first cheese home</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas hendrerit ligula quis blandit. 
+                    Mauris eget orci mi. Morbi eget tellus maximus, ultricies leo ac, vulputate urna. Sed lacus sem, aliquet 
+                    faucibus metus sed, cursus porttitor enim. Fusce molestie erat vel mi convallis pretium. Suspendisse potenti. 
+                    Proin luctus suscipit mauris.</p>
+                <a href="https://sll4rk.itch.io/the-last-cheese-home" class="cta-link">View Project →</a>
+            </div>
+            <div class="project-item">
+                <h3>Earth transport</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas hendrerit ligula quis blandit. 
+                    Mauris eget orci mi. Morbi eget tellus maximus, ultricies leo ac, vulputate urna. Sed lacus sem, aliquet 
+                    faucibus metus sed, cursus porttitor enim. Fusce molestie erat vel mi convallis pretium. Suspendisse potenti. 
+                    Proin luctus suscipit mauris.</p>
+                <a href="https://sll4rk.itch.io/earth-transport" class="cta-link">View Project →</a>
             </div>
         </div>
     </section>
@@ -49,9 +98,9 @@
 
             <h3>My Skills</h3>
             <ul class="skill-list">
-                <li>HTML & CSS (Sass/Less)</li>
-                <li>JavaScript (React/Vue/Angular)</li>
-                <li>Backend (Node.js/Python/PHP)</li>
+                <li>C#, OpenGL, GLSL, Python, C++, C, Java, HTML</li>
+                <li>Unity, Git, Rider, Blender, Ink scripting language</li>
+                <li>Czech (native), English (C1)</li>
                 </ul>
         </div>
     </section>
@@ -61,13 +110,12 @@
             <h2>Let's Connect</h2>
             <p>I am currently open to new opportunities. Reach out if you want to collaborate or just say hello!</p>
             <div class="contact-links">
-                <a href="mailto:your.email@example.com" class="cta-button">Email Me</a>
-                <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
-                <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+                <a href="mailto:marekslezacek02@gmail.com" class="cta-button">Email Me</a>
+                <a href="https://linkedin.com/in/marek-slezáček-2b42bb36a" class="cta-button">LinkedIn</a>
+                <a href="https://github.com/mSlezacek" class="cta-button">GitHub</a>
             </div>
-            <p class="copyright">&copy; 2024 Your Name. Built with pure HTML and CSS.</p>
+            <p class="copyright">&copy; 2025 Marek Slezáček</p>
         </div>
     </footer>
-
 </body>
 </html>
