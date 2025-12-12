@@ -17,8 +17,11 @@
         <div class="container">
             <nav>
                 <a href="#home">Home</a>
-                <a href="#work">Work</a>
                 <a href="#about">About me</a>
+                <a href="#work">Work</a>
+                <button id="darkModeToggle" class="mode-toggle">
+                <i class="fas fa-moon"></i> 
+            </button>
             </nav>
         </div>
     </header>
@@ -26,7 +29,7 @@
     <section id="hero" class="full-screen-section">
         <div class="container">
             <h1>Marek Slezáček</h1>
-            <p class="subtitle">A unity gameplay programmer</p>
+            <p class="subtitle">Unity Gameplay Programmer</p>
             <div class="contact-links-hero">
                 <a href="mailto:marekslezacek02@gmail.com" target="_blank" class="icon-button">
                     <i class="fa fa-envelope"></i>
@@ -45,7 +48,22 @@
             </div>
         </div>
     </section>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Your professional bio goes here. Focus on your experience, passions, and what you bring to a team.</p>
+            <a href="assets\resume-marek-slezacek.pdf" target="_blank" class="resume-button">
+                CHECK MY RESUME <i class="fas fa-file-pdf"></i>
+            </a>
 
+            <h3>My Skills</h3>
+            <ul class="skill-list">
+                <li>C#, OpenGL, GLSL, Python, C++, C, Java, HTML</li>
+                <li>Unity, Git, Rider, Blender, Ink scripting language</li>
+                <li>Czech (native), English (C1)</li>
+            </ul>
+        </div>
+    </section>
     <section id="work" class="section-padding">
         <div class="container">
             <h2>Projects</h2>
@@ -104,7 +122,7 @@
                     <img src="assets/projects/ShortTrip.png" alt="Short trip screenshot">
                 </div>
                 <div class="project-details">
-                    <h3>Short trip</h3>
+                    <h3>Short Trip</h3>
                     <p class="project-description">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas hendrerit ligula quis
                         blandit.
@@ -228,28 +246,12 @@
             </div>
     </section>
 
-    <section id="about" class="section-padding">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Your professional bio goes here. Focus on your experience, passions, and what you bring to a team.</p>
-            <a href="assets\resume-marek-slezacek.pdf" target="_blank" class="resume-button">
-                CHECK MY RESUME <i class="fas fa-file-pdf"></i>
-            </a>
-
-            <h3>My Skills</h3>
-            <ul class="skill-list">
-                <li>C#, OpenGL, GLSL, Python, C++, C, Java, HTML</li>
-                <li>Unity, Git, Rider, Blender, Ink scripting language</li>
-                <li>Czech (native), English (C1)</li>
-            </ul>
-        </div>
-    </section>
-
     <footer>
         <div class="site-footer">
             <p class="copyright">&copy; 2025 Marek Slezáček</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

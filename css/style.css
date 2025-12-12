@@ -6,8 +6,16 @@ html { scroll-behavior: smooth; }
     --font-primary: sans-serif; /* Use a modern sans-serif font like Inter, Poppins, or system fonts */
     --color-text: #1a1a1a;
     --color-background: #ffffff;
+    --color-footer: #e2e0e0;
     --color-accent: #ff9900; /* Use your preferred accent color */
     --max-width: 1000px; /* The maximum width of the content area */
+}
+
+body.dark-mode {
+    --color-text: #f0f0f0;        /* Light text */
+    --color-background: #121212;  /* Dark/Black background */
+    --color-accent: #ffb74d;      /* Slightly brighter accent for dark backgrounds */
+    --color-footer: #1f1f1f;  /* Dark background for footer/sections */
 }
 
 * {
@@ -128,7 +136,7 @@ nav a:hover {
 }
 
 .skill-list li {
-    background-color: #f0f0f0;
+    background-color: var(--color-footer);
     padding: 8px 15px;
     border-radius: 4px;
     font-size: 0.95rem;
@@ -136,11 +144,6 @@ nav a:hover {
 }
 
 /* FOOTER/CONTACT */
-
-footer {
-    text-align: center;
-    background-color: #f7f7f7; /* A slight gray background */
-}
 
 .cta-button {
     text-decoration: none;
@@ -160,7 +163,7 @@ footer {
     text-align: center;
     padding: 5px 0; 
     
-    background-color: #f7f7f7;
+    background-color: var(--color-footer);
 }
 
 .copyright {
@@ -212,7 +215,7 @@ footer {
     align-items: center;
     gap: 8px; /* Space between text and icon */
     
-    background-color: var(--color-accent); /* Use your accent color for high visibility */
+    background-color: var(--color-text); /* Use your accent color for high visibility */
     color: var(--color-background); /* White text for contrast */
     text-decoration: none;
     font-size: 1.15rem;
@@ -231,7 +234,7 @@ footer {
 }
 
 .resume-button:hover {
-    background-color: #e58800; /* A slightly darker shade of your accent color on hover */
+    background-color: var(--color-accent); /* A slightly darker shade of your accent color on hover */
     /* Alternatively, use opacity: 0.9; */
 }
 
@@ -300,4 +303,19 @@ footer {
 
 .project-links .cta-link {
     margin-right: 20px;
+}
+
+.mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--color-text); /* Uses text color, so it switches automatically */
+    margin-left: 20px;
+    padding: 5px;
+    transition: color 0.2s;
+}
+
+.mode-toggle:hover {
+    color: var(--color-accent);
 }
