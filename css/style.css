@@ -1,27 +1,25 @@
 html { scroll-behavior: smooth; }
 
-/* GLOBAL RESET & BASE STYLES */
 :root {
-    /* Define colors and fonts for easy changes */
-    --font-primary: sans-serif; /* Use a modern sans-serif font like Inter, Poppins, or system fonts */
+    --font-primary: sans-serif;
     --color-text: #1a1a1a;
     --color-background: #ffffff;
     --color-footer: #e2e0e0;
-    --color-accent: #ff9900; /* Use your preferred accent color */
-    --max-width: 1000px; /* The maximum width of the content area */
+    --color-accent: #ff9900;
+    --max-width: 1000px;
 }
 
 body.dark-mode {
-    --color-text: #f0f0f0;        /* Light text */
-    --color-background: #121212;  /* Dark/Black background */
-    --color-accent: #ffb74d;      /* Slightly brighter accent for dark backgrounds */
-    --color-footer: #1f1f1f;  /* Dark background for footer/sections */
+    --color-text: #f0f0f0;
+    --color-background: #121212;
+    --color-accent: #ffb74d;
+    --color-footer: #1f1f1f;
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Important for easy layout management */
+    box-sizing: border-box;
 }
 
 body {
@@ -29,27 +27,21 @@ body {
     line-height: 1.6;
     color: var(--color-text);
     background-color: var(--color-background);
-    -webkit-font-smoothing: antialiased; /* Improves font rendering on macOS/iOS */
+    -webkit-font-smoothing: antialiased;
 }
 
-/* UTILITY CLASSES */
-
-/* Centers content and sets the maximum width */
 .container {
     width: 90%;
     max-width: var(--max-width);
     margin: 0 auto;
 }
 
-/* Adds vertical spacing to all main content sections */
 .section-padding {
-    padding: 100px 0; /* Adjust this value for more or less space */
+    padding: 100px 0; 
 }
 
-/* TYPOGRAPHY */
-
 h1 {
-    font-size: 3.5rem; /* Large and bold, like the reference site */
+    font-size: 3.5rem; 
     line-height: 1.1;
     margin-bottom: 20px;
     font-weight: 700;
@@ -72,12 +64,11 @@ p {
     opacity: 0.8;
 }
 
-/* HEADER/NAVIGATION */
 
 header {
     padding: 20px 0;
-    border-bottom: 1px solid #eee; /* Subtle separator */
-    position: sticky; /* Keep it visible when scrolling */
+    border-bottom: 1px solid #eee;
+    position: sticky;
     top: 0;
     background: var(--color-background);
     z-index: 10;
@@ -103,13 +94,10 @@ nav a:hover {
     color: var(--color-accent);
 }
 
-/* HERO SECTION (The big, initial screen) */
-
 #hero {
-    /* Make the hero section take up most of the screen */
     min-height: 80vh; 
     display: flex;
-    align-items: center; /* Vertically center the text */
+    align-items: center;
 }
 
 
@@ -125,10 +113,8 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ABOUT SECTION */
-
 .skill-list {
-    list-style: none; /* Remove bullet points */
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -142,8 +128,6 @@ nav a:hover {
     font-size: 0.95rem;
     font-weight: 500;
 }
-
-/* FOOTER/CONTACT */
 
 .cta-button {
     text-decoration: none;
@@ -173,114 +157,89 @@ nav a:hover {
 }
 
 .icon-button {
-    /* 1. Define Size */
-    display: inline-flex; /* Use flex to easily center the icon */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px;       /* Width and height must be equal */
+    width: 50px; 
     height: 50px;      
     
-    /* 2. Make it Circular */
-    border-radius: 50%; /* 50% border-radius makes any square element a circle */
+    border-radius: 50%;
     
-    /* 3. Appearance */
-    background-color: var(--color-text); /* Dark background */
-    color: var(--color-background);     /* Light icon color */
+    background-color: var(--color-text);
+    color: var(--color-background);
     text-decoration: none;
-    font-size: 1.5rem; /* Size of the icon */
+    font-size: 1.5rem;
     
-    /* 4. Animation */
     transition: background-color 0.3s, color 0.3s;
     
-    /* Remove the separator if you are using multiple icon buttons */
     margin: 0 10px; 
 }
 
-/* Hover effect: Change colors for a nice visual feedback */
 .icon-button:hover {
     background-color: var(--color-accent); 
     color: var(--color-text);
 }
 
-/* If you use the button inside the contact-links-hero, adjust the original link styles to sit nicely next to it */
 .contact-links-hero a {
-    /* Keep these styles if you want the text links to look the same */
-    /* ... existing styles ... */
-    vertical-align: middle; /* Helps align the text links with the center of the button */
+    vertical-align: middle;
 }
 
 .resume-button {
-    /* 1. Appearance */
-    display: inline-flex; /* Use flex to align icon and text */
+    display: inline-flex;
     align-items: center;
-    gap: 8px; /* Space between text and icon */
+    gap: 8px;
     
-    background-color: var(--color-text); /* Use your accent color for high visibility */
-    color: var(--color-background); /* White text for contrast */
+    background-color: var(--color-text);
+    color: var(--color-background);
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 700;
     
-    /* 2. Shape and Spacing */
-    padding: 12px 25px; /* Vertical and horizontal padding */
-    border-radius: 4px; /* Slightly rounded corners */
+    padding: 12px 25px;
+    border-radius: 4px;
     
-    /* 3. Positioning and Animation */
     transition: background-color 0.3s, opacity 0.3s;
     
-    /* Crucial: Add right margin to separate it from the circular icons */
     margin-right: 25px; 
     margin-bottom: 50px;
 }
 
 .resume-button:hover {
-    background-color: var(--color-accent); /* A slightly darker shade of your accent color on hover */
-    /* Alternatively, use opacity: 0.9; */
+    background-color: var(--color-accent);
 }
 
 .project-item {
-    /* Use Flexbox to put the image and details side-by-side */
     display: flex;
-    align-items: center; /* Vertically align image and text */
-    gap: 40px; /* Space between the image and the text details */
+    align-items: center;
+    gap: 40px;
     
-    margin-bottom: 80px; /* Space between each project item */
+    margin-bottom: 80px;
     padding-bottom: 40px;
-    border-bottom: 1px solid #eee; /* Subtle separator line */
+    border-bottom: 1px solid #eee;
 }
 
-/* Alternate layout for every second project (Image on the right) */
 .project-item:nth-child(even) {
     flex-direction: row-reverse;
 }
 
 
-/* STYLES FOR THE IMAGE CONTAINER */
-
 .project-image {
-    /* Set the image to take up about 60% of the space */
     flex: 3; 
-    /* Ensures the image container doesn't get too small */
     min-width: 150px; 
     max-width: 400px;
     max-height: 300px;
     border-radius: 8px;
-    overflow: hidden; /* Clips the image border */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.project-image img {
-    /* Image fills the container */
-    width: 100%;
+.project-image img {    width: 100%;
     height: auto;
-    display: block; /* Removes any extra space below the image */
+    display: block;
 }
 
-
-/* STYLES FOR PROJECT DETAILS */
 
 .project-details {
-    /* Set the text details to take up about 40% of the space */
     flex: 2; 
 }
 
@@ -310,7 +269,7 @@ nav a:hover {
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
-    color: var(--color-text); /* Uses text color, so it switches automatically */
+    color: var(--color-text);
     margin-left: 20px;
     padding: 5px;
     transition: color 0.2s;
