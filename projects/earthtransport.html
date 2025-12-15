@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Transport | Marek Slezáček</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body class="project-page">
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <a href="../index.html" class="cta-link">Back to Portfolio</a>
+
+            <button id="darkModeToggle" class="mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main class="container section-padding">
+
+        <h1>Earth Transport</h1>
+        <p class="project-tech">
+            C#, Unity URP, Open data, Procedural generation
+        </p>
+        <div class="case-study-content">
+            Developed a system for generating terrain features (countries, cities, forestry) by processing serialized
+            real-world open data using a third-party Delaunay triangulation library.
+            I also implemented a system for reading serialized weather data to dynamically enhance visual
+            realism.
+            The project features a custom camera controller that rotates around the planet, built to support
+            simple transport tycoon-style gameplay on top of the generated world.
+            <br><br>
+            This is the oldest project and I would like to make newer version using the experience I
+            gained using compute shaders during my thesis to create more detailed world with faster
+            generation speed and expand on the gameplay.
+        </div>
+        <div class="case-study-links">
+            <a href="https://github.com/mSlezacek/EarthTransport" target="_blank" class="cta-button">View Code
+            </a>
+            <a href="https://sll4rk.itch.io/earth-transport" target="_blank" class="cta-button">Try
+                Demo</a>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p class="copyright">© 2025 Marek Slezáček</p>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
+</body>
+
+</html>
