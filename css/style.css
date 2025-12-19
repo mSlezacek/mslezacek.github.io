@@ -315,3 +315,49 @@ nav a:hover {
     margin-bottom: 40px;
     width: fit-content;
 }
+
+
+.full-width-image {
+    margin: 50px 0;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-light-gray);
+    margin-bottom: 70px;
+}
+
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-light-gray);
+}
+
+.full-width-image video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--color-light-gray);
+}
+
+.image-description {
+    margin-top: 15px;
+    font-size: 1rem;
+    color: var(--color-text);
+    opacity: 0.7;
+    text-align: center;
+}
+
+body.dark-mode .full-width-image img {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
