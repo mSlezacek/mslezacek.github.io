@@ -18,7 +18,7 @@
             <nav>
                 <a href="#home">Home</a>
                 <a href="#about">About me</a>
-                <a href="#work">Work</a>
+                <a href="#projects">Projects</a>
                 <button id="darkModeToggle" class="mode-toggle">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -27,25 +27,31 @@
     </header>
 
     <section id="hero" class="full-screen-section">
-        <div class="container">
-            <h1>Marek Slezáček</h1>
-            <p class="subtitle">Unity Gameplay Programmer</p>
-            <div class="contact-links-hero">
-                <a href="mailto:marekslezacek02@gmail.com" target="_blank" class="icon-button">
-                    <i class="fa fa-envelope"></i>
-                </a>
-                <a href="https://linkedin.com/in/marek-slezáček-2b42bb36a" target="_blank" class="icon-button">
-                    <i class="fa fa-linkedin-square"></i>
-                </a>
-
-                <a href="https://github.com/mSlezacek" target="_blank" class="icon-button">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://sll4rk.itch.io/" target="_blank" class="icon-button">
-                    <i class="fab fa-itch-io"></i>
-                </a>
+        <div class="container hero-flex">
+            <div class="hero-image">
+                <img src="assets/marek-photo.jpg" alt="Marek Slezáček">
             </div>
+            <div class="hero-text">
+                <h1>Marek Slezáček</h1>
+                <p class="subtitle">Unity Gameplay Programmer</p>
+                <div class="contact-links-hero">
+                    <a href="mailto:marekslezacek02@gmail.com" target="_blank" class="icon-button">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/marek-slezáček-2b42bb36a" target="_blank" class="icon-button">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+
+                    <a href="https://github.com/mSlezacek" target="_blank" class="icon-button">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://sll4rk.itch.io/" target="_blank" class="icon-button">
+                        <i class="fab fa-itch-io"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
     </section>
     <section id="about" class="section-padding">
@@ -68,9 +74,28 @@
             </ul>
         </div>
     </section>
-    <section id="work" class="section-padding">
+    <section id="projects" class="section-padding">
         <div class="container">
             <h2>Projects</h2>
+            <a href="projects/shorttrip.html" class="project-link-wrapper">
+                <div class="project-item">
+                    <div class="project-image">
+                        <img src="assets/projects/ShortTrip.png" alt="Short trip screenshot">
+                    </div>
+                    <div class="project-details">
+                        <h3>Tech demo: Short Trip</h3>
+                        <p class="project-description">
+                            This project is a technical playground built from the ground up to master clean, modular
+                            architecture and the backbone of complex game systems. I developed a fully functional
+                            Quest and Inventory Manager utilizing Scriptable Objects and the Event Channel Architecture,
+                            alongside my own system for customizable, stylized vehicle controls.
+                        </p>
+                        <p class="project-tech">
+                            C#, Unity URP, Tech Demo
+                        </p>
+                    </div>
+                </div>
+            </a>
             <a href="projects/tkob.html" class="project-link-wrapper">
                 <div class="project-item">
                     <div class="project-image">
@@ -103,25 +128,6 @@
                         </p>
                         <p class="project-tech">
                             C#, Unity URP, GameJam, Teamwork
-                        </p>
-                    </div>
-                </div>
-            </a>
-            <a href="projects/shorttrip.html" class="project-link-wrapper">
-                <div class="project-item">
-                    <div class="project-image">
-                        <img src="assets/projects/ShortTrip.png" alt="Short trip screenshot">
-                    </div>
-                    <div class="project-details">
-                        <h3>Short Trip</h3>
-                        <p class="project-description">
-                            This project is a technical playground built from the ground up to master clean, modular
-                            architecture and the backbone of complex game systems. I developed a fully functional
-                            Quest and Inventory Manager utilizing Scriptable Objects and the Event Channel Architecture,
-                            alongside my own system for customizable, stylized vehicle controls.
-                        </p>
-                        <p class="project-tech">
-                            C#, Unity URP, Tech Demo
                         </p>
                     </div>
                 </div>
